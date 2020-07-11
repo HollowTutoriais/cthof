@@ -1,42 +1,46 @@
-<html>
-<head>
-    <title>SISTEMA DE ATRIBUTOS C.T.H</title>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="height=device-height, initial-scale=1">
+        <title>Sistema De atributos C.T.H</title>
+        <meta name="description" content="RPG de historia aventura mundo aberto e criação de personagem">
+        <meta name="keywords" content="RPG criação mundo aberto">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Samuel Reis">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/icon2.png">
+    </head>
     <style>
         html{
-            background-color:black;
-
+            background-color:#c8e5d2;
             text-align: center
-        }
-
-        a{
-            color:yellow;
-            font-size:27px;
-        }
-
-        h1{
-            color:purple;
-        }
-
-    .texto{
-            color:white;
-            font-size: 25px;
-        }
-
-    .topico{
-            color:red;
-            margin-top: 45px;
-            font-size: 30px;
         }
     </style>
 </head>
 <body>
-    <div:>
-        <a href="index.html">VOLTAR PARA PAGINA INICIAL</a>
-    </div:>
+    <header class="cabecalho">
+          <h1 class="logo">Site Oficial RPG C.T.H</h1>
+         <button class="btn-menu"> <i class="fa fa-bars fa-lg" aria-hidden="true"></i> </button>
+         <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="saitama.html">Mapa Cidade Saitama</a></li>
+                <li><a href="karakura.html">Mapa Cidade Karakura</a></li>
+                <li><a href="floresta.html">Mapa Floresta</a></li>
+                <li><a href="escola.html">Mapa Escola</a></li>
+            </ul>
+        </nav>
+        </header>
     <div>
-        <h1>SISTEMA DE DE ATRIBUTOS</h1>
+        <h1 class="h1">SISTEMA DE DE ATRIBUTOS</h1>
     </div>
-    <div>
+    <div class="sha">
         <span class="texto">
             <p class="topico">Os atributos em batalha são levados em consideração de:</p>
             <p>Ataque - Defesa - Combate</p>
@@ -67,6 +71,15 @@ quem leva o combate é a pessoa que tiver mais pontos no atributo ultilizado</p>
             <p>Este atributo serve para convencer alguma pessoa ou inimigo de algo, seu sua Lábia/Persuasão for maior que a percepção do inimigo, conseguira isso facilmente(serve tambem com NPC´s ao fechar acordos e etc)</p>
             <p class="topico">OS PONTOS DE SOBREVIVENCIA SERÃO ADQUIRIDOS CONFORME VOCÊ USALOS NO DECORRER DO RPG</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(".btn-menu").click(function(){
+            $(".menu").show();
+            });
+            $(".btn-close").click(function(){
+            $(".menu").hide();
+            });
+        </script>
 </body>
 
 </html>
